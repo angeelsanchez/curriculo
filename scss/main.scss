@@ -1,0 +1,241 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(232, 23, 96);
+
+  .curriculo {
+    width: $ancho;
+    height: $altura;
+    padding: 20px;
+    margin: 40px auto;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+
+    .inf-personal {
+      background-color: rgb(46, 45, 45);
+      height: $altura;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      color: whitesmoke;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      h2 {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 30px;
+        color: white;
+      }
+
+      .perfil {
+        border-bottom: 5px solid rgb(232, 23, 96);
+      }
+
+      .direccion {
+        border-bottom: 5px solid rgb(232, 23, 96);
+      }
+
+      .contacto {
+        border-bottom: 5px solid rgb(232, 23, 96);
+      }
+
+      .idiomas {
+        padding: 10px;
+
+        .ingles {
+          height: 10px;
+          width: 40%;
+          background-color: yellow;
+          border-radius: 10px;
+        }
+
+        .frances {
+          height: 10px;
+          width: 20%;
+          background-color: yellow;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .inf-laboral {
+      padding: 15px;
+      font-weight: bold;
+      font-size: 30px;
+      font: bold;
+      float: left;
+      width: 65%;
+      height: $altura;
+      flex-direction: column;
+      display: flex;
+
+      .nombre {
+        flex-grow: 1;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+        &::before {
+          content: "ANGEL DAVID SÁNCHEZ LÓPEZ";
+        }
+
+        &::after {
+          width: 95%;
+          height: 5px;
+          background-color: black;
+          border-radius: 20%;
+          content: "     ";
+        }
+      }
+
+      .educacion {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+          content: "EDUCACIÓN";
+        }
+
+        .tiempo {
+          font-weight: 100;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          padding-bottom: 30px;
+          border-bottom: 5px solid black;
+
+          &:before {
+            content: "2018-2020\A\A 2020-2022";
+            white-space: pre;
+          }
+
+          &:after {
+            content: "IES Miguel Hernandez\A\A IES Ingeniero de la Cierva";
+            white-space: pre;
+          }
+          .linea {
+            margin: 15px;
+            height: 100px;
+            width: 5px;
+            background-color: blue;
+            border-radius: 20%;
+          }
+        }
+      }
+
+      .experiencia {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+          content: "EXPERIENCIA";
+        }
+
+        .tiempo {
+          font-weight: 100;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          padding-bottom: 30px;
+          border-bottom: 5px solid black;
+
+          &:before {
+            content: "2018-2020\A\A 2020-2022";
+            white-space: pre;
+          }
+
+          &:after {
+            content: "Horfrusa\A\A Pccomponentes";
+            white-space: pre;
+          }
+          .linea {
+            margin: 15px;
+            height: 100px;
+            width: 5px;
+            background-color: blue;
+            border-radius: 20%;
+          }
+        }
+      }
+
+      .otros {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+          content: "OTROS";
+        }
+
+        .tiempo {
+          font-weight: 100;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          padding-bottom: 30px;
+          border-bottom: 5px solid black;
+
+          &:before {
+            content: "2018-2022";
+            white-space: pre;
+          }
+
+          &:after {
+            content: "Proyecto servidores";
+            white-space: pre;
+          }
+          .linea {
+            margin: 15px;
+            height: 50px;
+            width: 5px;
+            background-color: blue;
+            border-radius: 20%;
+          }
+        }
+      }
+
+      .conocimientos {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+          padding-bottom: 60px;
+          content: "CONOCIMIENTOS";
+        }
+
+        .fotos {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+        }
+
+        img {
+          height: 125%;
+          width: 125%;
+        }
+      }
+    }
+  }
+}

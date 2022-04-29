@@ -1,0 +1,208 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(232, 23, 96);
+}
+body .curriculo {
+  width: 794px;
+  height: 968px;
+  padding: 20px;
+  margin: 40px auto;
+  border: 1px black solid;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+}
+body .curriculo .inf-personal {
+  background-color: rgb(46, 45, 45);
+  height: 968px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+body .curriculo .inf-personal img {
+  width: 100%;
+}
+body .curriculo .inf-personal p {
+  padding: 20px;
+  font-size: 20px;
+}
+body .curriculo .inf-personal h2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: white;
+}
+body .curriculo .inf-personal .perfil {
+  border-bottom: 5px solid rgb(232, 23, 96);
+}
+body .curriculo .inf-personal .direccion {
+  border-bottom: 5px solid rgb(232, 23, 96);
+}
+body .curriculo .inf-personal .contacto {
+  border-bottom: 5px solid rgb(232, 23, 96);
+}
+body .curriculo .inf-personal .idiomas {
+  padding: 10px;
+}
+body .curriculo .inf-personal .idiomas .ingles {
+  height: 10px;
+  width: 40%;
+  background-color: yellow;
+  border-radius: 10px;
+}
+body .curriculo .inf-personal .idiomas .frances {
+  height: 10px;
+  width: 20%;
+  background-color: yellow;
+  border-radius: 10px;
+}
+body .curriculo .inf-laboral {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  font: bold;
+  float: left;
+  width: 65%;
+  height: 968px;
+  flex-direction: column;
+  display: flex;
+}
+body .curriculo .inf-laboral .nombre {
+  flex-grow: 1;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+body .curriculo .inf-laboral .nombre::before {
+  content: "ANGEL DAVID SÁNCHEZ LÓPEZ";
+}
+body .curriculo .inf-laboral .nombre::after {
+  width: 95%;
+  height: 5px;
+  background-color: black;
+  border-radius: 20%;
+  content: "     ";
+}
+body .curriculo .inf-laboral .educacion {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+body .curriculo .inf-laboral .educacion::before {
+  content: "EDUCACIÓN";
+}
+body .curriculo .inf-laboral .educacion .tiempo {
+  font-weight: 100;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 5px solid black;
+}
+body .curriculo .inf-laboral .educacion .tiempo:before {
+  content: "2018-2020\a\a 2020-2022";
+  white-space: pre;
+}
+body .curriculo .inf-laboral .educacion .tiempo:after {
+  content: "IES Miguel Hernandez\a\aIES Ingeniero de la Cierva";
+  white-space: pre;
+}
+body .curriculo .inf-laboral .educacion .tiempo .linea {
+  margin: 15px;
+  height: 100px;
+  width: 5px;
+  background-color: blue;
+  border-radius: 20%;
+}
+body .curriculo .inf-laboral .experiencia {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+body .curriculo .inf-laboral .experiencia::before {
+  content: "EXPERIENCIA";
+}
+body .curriculo .inf-laboral .experiencia .tiempo {
+  font-weight: 100;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 5px solid black;
+}
+body .curriculo .inf-laboral .experiencia .tiempo:before {
+  content: "2018-2020\a\a 2020-2022";
+  white-space: pre;
+}
+body .curriculo .inf-laboral .experiencia .tiempo:after {
+  content: "Horfrusa\a\aPccomponentes";
+  white-space: pre;
+}
+body .curriculo .inf-laboral .experiencia .tiempo .linea {
+  margin: 15px;
+  height: 100px;
+  width: 5px;
+  background-color: blue;
+  border-radius: 20%;
+}
+body .curriculo .inf-laboral .otros {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+body .curriculo .inf-laboral .otros::before {
+  content: "OTROS";
+}
+body .curriculo .inf-laboral .otros .tiempo {
+  font-weight: 100;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 5px solid black;
+}
+body .curriculo .inf-laboral .otros .tiempo:before {
+  content: "2018-2022";
+  white-space: pre;
+}
+body .curriculo .inf-laboral .otros .tiempo:after {
+  content: "Proyecto servidores";
+  white-space: pre;
+}
+body .curriculo .inf-laboral .otros .tiempo .linea {
+  margin: 15px;
+  height: 50px;
+  width: 5px;
+  background-color: blue;
+  border-radius: 20%;
+}
+body .curriculo .inf-laboral .conocimientos {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+body .curriculo .inf-laboral .conocimientos::before {
+  padding-bottom: 60px;
+  content: "CONOCIMIENTOS";
+}
+body .curriculo .inf-laboral .conocimientos .fotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+body .curriculo .inf-laboral .conocimientos img {
+  height: 125%;
+  width: 125%;
+}
+
+/*# sourceMappingURL=main.css.map */
